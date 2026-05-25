@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -52,7 +53,7 @@ header > a,
 /* homepage */
 
 .home-page{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(./src/assets/image-54.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../src/assets/image-54.png);
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -71,6 +72,7 @@ header > a,
 
 .home-page > .home-paragraph{
     padding: .5em 0 2em;
+    line-height: 1.5;
 }
 
 /* about-page */
@@ -95,6 +97,7 @@ header > a,
 
 .about-paragraph{
     padding: .5em 0 ;    
+    line-height: 1.5;
 }
 
 .about-text-contanier > .card{
