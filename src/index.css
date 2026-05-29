@@ -53,7 +53,9 @@ header > a,
 /* homepage */
 
 .home-page{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../src/assets/image-54.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.46),
+     rgba(0, 0, 0, 0.46)), 
+     url(../src/assets/image-54.png);
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -104,6 +106,100 @@ header > a,
     margin:  3em 0 0;
 }
 
+.about-card{
+    background-color: #FFCC8D;
+    color: #161616;
+    padding: 1.5em 2em; 
+    border-radius: 5px;
+}
+
+.about-card > h2{
+    margin: 0.2em 0;
+}
+
+.about-card > a{
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+/* vans-page */
+
+.vans-page{
+    padding: 2em 0;
+    color: #161616;
+}
+
+.vans-page > h1{
+    font-size: 32px;
+    margin: 0;
+    padding: 0 1em 1em;
+}
+
+.vans-page > .vans-options{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.vans-options > .van-card{
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.van-card > img {
+    width: 100%;
+    display: block;
+    max-height: 40vh;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+.van-text-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: .5em 0 0;
+    gap: .5em;
+}
+
+
+.van-text-container > h2,
+.van-text-container > p,
+.van-card > p{
+    margin: 0;
+}
+
+.van-text-container > h2,
+.van-text-container > p > strong {
+    font-size: 20px;
+}
+
+.van-card > p{
+    margin: .75em 0;
+}
+
+
+
+.simple{
+    background-color: #E17654;
+}
+
+.rugged{
+    background-color: #115E59;
+}
+
+.luxury{
+    background-color: #161616;
+}
+
 /* footer */
 
 .footer{
@@ -150,21 +246,12 @@ header > a,
 
 }
 
-/* card-component */
+/* badge */
 
-.card{
-    background-color: #FFCC8D;
-    color: #161616;
-    padding: 1.5em 2em; 
+.badge{
+    color: #FFEAD0;
     border-radius: 5px;
-}
-
-.card > h2{
-    margin: 0.2em 0;
-}
-
-.card > a{
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 6px;
+    font-weight: 600;
+    padding: .5em 1em;
+    width: fit-content;
 }

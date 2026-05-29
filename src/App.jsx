@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import HomePage from "./Pages/HomePage"
 import AboutPage from "./Pages/AboutPage"
+import VansPage from "./Pages/VansPage"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/vans" element={<VansPage/>} />
       </Routes> 
       <Footer>Ⓒ 2026 #VANLIFE</Footer>
     </BrowserRouter>
