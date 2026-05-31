@@ -1,9 +1,10 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom"
+import { BrowserRouter,Routes,Route} from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
-import HomePage from "./Pages/HomePage"
-import AboutPage from "./Pages/AboutPage"
-import VansPage from "./Pages/VansPage"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Vans from "./Pages/Vans"
+import VanDetails from "./Pages/VanDetails"
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
         </Navbar.Nav>
       </Navbar>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/vans" element={<VansPage/>} />
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>} />
+        <Route path="/vans" element={<Vans/>} />
+        <Route path="/vans/:id" element={<VanDetails/>} />
       </Routes> 
       <Footer>Ⓒ 2026 #VANLIFE</Footer>
     </BrowserRouter>

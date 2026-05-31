@@ -1,7 +1,7 @@
 import BtnLikeLink from "../components/BtnLikeLink/BtnLikeLink";
 import aboutImg from "../assets/image-55.png"
 
-export default function Aboutpage(){
+export default function About(){
     return(
         <section className="about-page">
             <img className="about-image" src={aboutImg} alt="A guy enjoying vanlife" />

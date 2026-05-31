@@ -1,6 +1,6 @@
 import BtnLikeLink from "../components/BtnLikeLink/BtnLikeLink"
 
-export default function HomePage(){
+export default function Home(){
     return(
          <section className="home-page">
             <h1 className="home-title">You got the travel plans, we got the travel vans.</h1>

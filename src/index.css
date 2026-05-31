@@ -8,6 +8,14 @@ main{
     max-width: 768px;
 }
 
+
+a{
+    text-decoration: none;
+    color: #161616;
+}
+
+
+
 /* navbar */
 
 .navbar{
@@ -23,10 +31,6 @@ main{
     gap: 1em;
 }
 
-header > a,
-.navbar-items > a{
-    text-decoration: none;
-}
 
 .brand-name{
     font-size: 25.35px;
@@ -128,6 +132,7 @@ header > a,
 .vans-page{
     padding: 2em 0;
     color: #161616;
+    background-color: #FFF7ED;
 }
 
 .vans-page > h1{
@@ -186,18 +191,38 @@ header > a,
     margin: .75em 0;
 }
 
+/* van-details-page */
 
-
-.simple{
-    background-color: #E17654;
+.van-details-page{
+    padding: 3em 2em;
+    background-color: #FFF7ED;
 }
 
-.rugged{
-    background-color: #115E59;
+.van-details-page > img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
 }
 
-.luxury{
-    background-color: #161616;
+.van-details-page > h1{
+    font-size: 32px;
+}
+
+.van-details-page > .price{
+    font-size: 20px;
+}
+
+.van-details-page > .price > strong{
+    font-size: 24px;
+}
+
+.van-details-page > p{
+    line-height: 1.5;
+}
+
+.van-details-page > button{
+    width: 100%;
+    margin: 1em 0;
 }
 
 /* footer */
@@ -254,4 +279,16 @@ header > a,
     font-weight: 600;
     padding: .5em 1em;
     width: fit-content;
+}
+
+.simple{
+    background-color: #E17654;
+}
+
+.rugged{
+    background-color: #115E59;
+}
+
+.luxury{
+    background-color: #161616;
 }
