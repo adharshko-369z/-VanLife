@@ -1,4 +1,4 @@
-import BtnLikeLink from "../components/BtnLikeLink/BtnLikeLink"
+import BtnLikeLink from "../components/BtnLikeLink"
 
 export default function Home(){
     return(

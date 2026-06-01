@@ -18,7 +18,7 @@ a{
 
 /* navbar */
 
-.navbar{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ a{
     background-color: #FFF7ED;
 }
 
-.navbar-items{
+.navbar{
     display: flex;
     gap: 1em;
 }
@@ -38,17 +38,17 @@ a{
     color: #000000;
 }
 
-.navbar-items > a{
+.navbar > a{
     color: #4D4D4D;
     font-weight: 600;
 }
 
-.navbar-items > a:hover{
+.navbar > a:hover{
     color:  #161616;
 }
 
-.navbar-items > a:focus,
-.navbar-items > a:active{
+.navbar > a:focus,
+.navbar > a:active{
     color: #161616;
     text-decoration: underline #161616;
     outline:  none;

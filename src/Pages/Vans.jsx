@@ -1,4 +1,4 @@
-import Badge from "../components/Badge/Badge"
+import Badge from "../components/Badge"
 
 import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
@@ -17,8 +17,7 @@ export default function Vans(){
     },[])
 
 
-    const vansOptions = vansDetails.map(van =>{
-        
+    const vansOptions = vansDetails.map(van =>{         
         return (
                 <Link to={`/vans/${van.id}`} key={van.id} className="van-card">
                     <img src={van.imageUrl} alt={`${van.name} van`} />

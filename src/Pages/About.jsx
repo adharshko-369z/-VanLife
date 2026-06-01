@@ -1,4 +1,4 @@
-import BtnLikeLink from "../components/BtnLikeLink/BtnLikeLink";
+import BtnLikeLink from "../components/BtnLikeLink";
 import aboutImg from "../assets/image-55.png"
 
 export default function About(){
