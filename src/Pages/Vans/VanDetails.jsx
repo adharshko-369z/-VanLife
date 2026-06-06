@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react"
 import { useParams } from "react-router-dom"
-import Badge from "../components/Badge"
-import Button from "../components/Button"
+import Badge from "../../components/Badge"
+import Button from "../../components/Button"
 
 export default function VanDetails(){
     const [van,setVan] = useState(null)
