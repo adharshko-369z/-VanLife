@@ -24,8 +24,6 @@ export default function HostVans(){
             )
     })
 
-    console.log(HostVans)
-
     return (
         
         <div className="host-vans-list">

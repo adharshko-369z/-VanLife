@@ -282,6 +282,94 @@ a{
     font-weight: 500;
 }
 
+/* host-van-page */
+
+.host-van-page{
+    background-color: #FFF7ED;
+    color: #161616;
+    padding: 2em 0;
+}
+
+.host-van-detail{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin: 0 2em;
+    padding-bottom: 2em;
+}
+
+
+.host-van-detail > nav{
+    background-color: #FFFFFF;
+}
+
+
+.van-summary-view{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1em ;
+    margin: 0 1.5em ;
+    padding: 2em 0;
+}
+
+.van-summary-view > img{
+    width: 30vw;
+    height: 30wh;
+    min-height: 20vh;
+    border-radius: 5px;
+}
+
+.van-summary-details > h1,
+.van-summary-details > p {
+    margin: 0.3em;
+}
+
+.van-summary-details > h1{
+    font-size: 26px;
+}
+
+.van-summary-details > p{
+    font-size: 14px;
+}
+
+.van-summary-details > p > strong{
+    font-size: 18px;
+}
+
+.host-van-detail > nav{
+    padding: 1.5em;
+}
+
+/* details-section, price-section and photo section */
+
+.details-section,
+.price-section,
+.photos-section{
+    padding: 0 1.5em;
+}
+
+.details-section > p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.details-section > p > strong {
+    margin-right: .3em;
+}
+
+.price-section > p > strong{
+    font-size: 24px;
+}
+
+
+.photos-section > img{
+    width: 20vw;
+    height: 15vh;
+    border-radius: 5px;
+}
+
+
 /* button-component */
 
 .btn,
