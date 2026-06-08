@@ -1,5 +1,5 @@
 import { useState,useEffect, createContext } from "react"
-import { useParams, Outlet, NavLink } from "react-router-dom"
+import { useParams, Outlet, NavLink, Link } from "react-router-dom"
 import Badge from "../../../components/Badge"
 
 const VanDetailsContext = createContext()
@@ -16,6 +16,7 @@ export default function HostVanDetails(){
 
     return (
     HostVan && <div className="host-van-page">
+        <Link to=".." relative="path" className="back-btn-like-link">&larr;<span>Back to all vans</span></Link>
         <div className="host-van-detail">
             <div className="van-summary-view">
                 <img src={HostVan[0].imageUrl} alt="" />
@@ -26,24 +27,22 @@ export default function HostVanDetails(){
                 </div>
             </div>
             <nav className="navbar host-nav">
-                    <NavLink to={`/host/vans/${param.id}`}
+                    <NavLink to="."
                     className={({isActive}) => isActive ? "active-link" : null} end>
                         Details
                     </NavLink>
                     
-                    <NavLink to={`/host/vans/${param.id}/pricing`}
+                    <NavLink to="pricing"
                     className={({isActive}) => isActive ? "active-link" : null}>
                         Pricing
                     </NavLink>
 
-                    <NavLink to={`/host/vans/${param.id}/photos`}
+                    <NavLink to="photos"
                     className={({isActive}) => isActive ? "active-link" : null}>
                         Photos
                     </NavLink>
             </nav>
-            <VanDetailsContext.Provider value={{HostVan}}>
-                <Outlet />
-            </VanDetailsContext.Provider>
+                <Outlet context={[HostVan]}/>
         </div>
     </div>
 )

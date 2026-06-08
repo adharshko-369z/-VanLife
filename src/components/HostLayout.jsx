@@ -4,22 +4,22 @@ export default function HostLayout(){
     return(
         <section className="host-page">
             <nav className="navbar host-nav">
-                 <NavLink to="/host"
+                 <NavLink to="."
                   className={({isActive}) => isActive ? "active-link" : null} end>
                     Dashboard
                  </NavLink>
                  
-                <NavLink to="/host/income"
+                <NavLink to="income"
                  className={({isActive}) => isActive ? "active-link" : null}>
                     Income
                 </NavLink>
 
-                <NavLink to="/host/vans"
+                <NavLink to="vans"
                  className={({isActive}) => isActive ? "active-link" : null}>
                     Vans
                 </NavLink>
 
-                <NavLink to="/host/reviews"
+                <NavLink to="reviews"
                  className={({isActive}) => isActive ? "active-link" : null}>
                     Reviews
                 </NavLink>

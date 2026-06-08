@@ -7,17 +7,17 @@ export default function Header(){
                 <span className="brand-name">#VANLIFE</span>
            </Link>
            <nav className="navbar">
-                 <NavLink to="/host"
+                 <NavLink to="host"
                  className={({isActive}) => isActive ? "active-link" : null}>
                     Host
                  </NavLink>
 
-                <NavLink to="/about"
+                <NavLink to="about"
                 className={({isActive}) => isActive ? "active-link" : null}>
                     About
                 </NavLink>
 
-                <NavLink to="/vans"
+                <NavLink to="vans"
                 className={({isActive}) => isActive ? "active-link" : null}>
                     Vans
                 </NavLink>

@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import { VanDetailsContext } from "./HostVanDetails";
+import { useOutletContext } from "react-router-dom";
 
 export default function Pricing(){
 
-    const { HostVan } = useContext(VanDetailsContext)
+    const [ HostVan ] = useOutletContext()
 
     return(
         <div className="price-section">
