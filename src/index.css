@@ -325,7 +325,7 @@ a{
     display: flex;
     gap: 1em;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
     margin: 1em 0;
 }
 
@@ -335,12 +335,20 @@ a{
     border-radius: 5px
 }
 
+.host-van > .van-detail{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
 .host-van > .van-detail > h2{
+    margin: 0;
     font-size: 20px;
     font-weight: 600;
 }
 
 .host-van > .van-detail > p{
+    margin: 0;
     color: #4D4D4D;
     font-weight: 500;
 }
@@ -357,10 +365,10 @@ a{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    border-radius: 6px;
     margin:2em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
-
 
 .host-van-detail > nav{
     background-color: #FFFFFF;
@@ -369,7 +377,7 @@ a{
 
 .van-summary-view{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: left;
     gap: 1em ;
     margin: 0 1.5em ;
@@ -379,7 +387,6 @@ a{
 .van-summary-view > img{
     width: 30vw;
     height: 30wh;
-    min-height: 20vh;
     border-radius: 5px;
 }
 
@@ -389,7 +396,7 @@ a{
 }
 
 .van-summary-details > h1{
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .van-summary-details > p{
@@ -427,7 +434,7 @@ a{
 
 
 .photos-section > img{
-    width: 20vw;
+    width: 25vw;
     height: 15vh;
     border-radius: 5px;
 }
