@@ -1,8 +1,6 @@
-import { useState,useEffect, createContext } from "react"
+import { useState,useEffect} from "react"
 import { useParams, Outlet, NavLink, Link } from "react-router-dom"
 import Badge from "../../../components/Badge"
-
-const VanDetailsContext = createContext()
 
 export default function HostVanDetails(){
     const [HostVan,setHostVan] = useState(null)
@@ -48,4 +46,3 @@ export default function HostVanDetails(){
 )
 }
 
-export { VanDetailsContext }

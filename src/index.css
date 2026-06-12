@@ -166,6 +166,62 @@ a{
     padding: 0 1em 1em;
 }
 
+.filter-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em 0 2em 2em;
+}
+
+.filter-btns >.filter-btn{
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    font-weight: 500;
+}
+
+.filter-btns > .filter-btn:focus{
+    outline: none;
+}
+
+.filter-btns > .clear-filters-btn{
+    background-color: #FFF7ED;
+    color: #4D4D4D;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.filter-btn-simple:hover,
+.filter-btn-rugged:hover,
+.filter-btn-luxury:hover,
+.filter-btn-simple:focus,
+.filter-btn-luxury:focus,
+.filter-btn-rugged:focus{
+    color: #FFEAD0;
+}
+
+.filter-btns > .selected{
+    color: #FFEAD0;
+}
+
+.filter-btn-simple:hover,
+.filter-btn-simple:focus,
+.filter-btn-simple.selected{
+    background-color: #E17654;
+}
+
+.filter-btn-luxury:hover,
+.filter-btn-luxury:focus,
+.filter-btn-luxury.selected{
+    background-color: #161616;
+}
+
+.filter-btn-rugged:hover,
+.filter-btn-rugged:focus,
+.filter-btn-rugged.selected{
+    background-color: #115E59;
+}
+
+
 .vans-page > .vans-options{
     display: flex;
     align-items: start;
