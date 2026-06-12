@@ -227,7 +227,8 @@ a{
     align-items: start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
+    padding: 1em;
+    gap: 1em;
 }
 
 .vans-options > .van-card{
