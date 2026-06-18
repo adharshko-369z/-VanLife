@@ -1,10 +1,11 @@
 import { useState,useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link, useLocation} from "react-router-dom"
 import Badge from "../../components/Badge"
 import Button from "../../components/Button"
 
 export default function VanDetails(){
     const [van,setVan] = useState(null)
+    const location = useLocation()
     const params = useParams()
     
     useEffect (()=>{
@@ -14,8 +15,15 @@ export default function VanDetails(){
             .catch(err => console.log(err))
     },[params.id])
 
+    const backToExactPage = location.state.search || ""
+    const whichTypePage = location.state.type || "all"
+
 return(
     van ?<div className="van-details-page">
+            <Link to={`..?${backToExactPage}`}
+            relative="path" className="back-btn-like-link">
+                <span className="back-arrow">&larr;</span><span>{`Back to ${whichTypePage} vans`}</span>
+            </Link>
             <img src={van.imageUrl} alt="" />
             <Badge variant={van.type}>{van.type}</Badge>
             <h1>{van.name}</h1>

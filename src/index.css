@@ -23,6 +23,10 @@ a{
     text-decoration: underline;
 }
 
+.back-btn-like-link > .back-arrow{
+    font-weight: 500;
+}
+
 /* navbar */
 
 .header{
@@ -77,6 +81,28 @@ a{
 .footer > p{
     margin: 0;
     text-align: center;
+}
+
+/* not-found-page */
+
+.not-found-page{
+    min-height: 70vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #FFF7ED;
+
+}
+
+.not-found-page > h1{
+    margin: 0;
+    padding: 1em 0;
+}
+
+.not-found-page > a{
+    width: 95%;
 }
 
 /* homepage */
@@ -276,8 +302,13 @@ a{
 /* van-details-page */
 
 .van-details-page{
-    padding: 3em 2em;
+    padding: 2em;
     background-color: #FFF7ED;
+}
+
+.van-details-page > .back-btn-like-link{
+    margin: 0 0 2em;
+    display: inline-block;
 }
 
 .van-details-page > img{

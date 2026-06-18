@@ -14,7 +14,9 @@ export default function HostVanDetails(){
 
     return (
     HostVan && <div className="host-van-page">
-        <Link to=".." relative="path" className="back-btn-like-link">&larr;<span>Back to all vans</span></Link>
+        <Link to=".." relative="path" className="back-btn-like-link">
+            <span className="back-arrow">&larr;</span><span>Back to all vans</span>
+        </Link>
         <div className="host-van-detail">
             <div className="van-summary-view">
                 <img src={HostVan[0].imageUrl} alt="" />

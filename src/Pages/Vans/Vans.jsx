@@ -23,7 +23,8 @@ export default function Vans(){
 
     const vansOptions = displayVansDetails.map(van =>{         
         return (
-                <Link to={van.id} key={van.id} className="van-card">
+                <Link to={van.id} key={van.id} className="van-card" 
+                state={{search:searchParams.toString(),type:typeFilter}}> 
                     <img src={van.imageUrl} alt={`${van.name} van`} />
                         <div className="van-text-container">
                             <h2>{van.name}</h2>
@@ -52,22 +53,22 @@ export default function Vans(){
                 <Button variant= {`filter-btn filter-btn-simple
                     ${typeFilter==="simple"? "selected" : ""} `}
                     onClick={()=>handleFilterChange("type","simple")}>
-                    Simple
+                    simple
                 </Button>
                 <Button variant= {`filter-btn filter-btn-luxury
                     ${typeFilter==="luxury"? "selected" : ""}`} 
                     onClick={()=>handleFilterChange("type","luxury")}>
-                    Luxury
+                    luxury
                 </Button>
                 <Button variant= {`filter-btn filter-btn-rugged
                     ${typeFilter==="rugged"? "selected" : ""}`} 
                     onClick={()=>handleFilterChange("type","rugged")}>
-                    Rugged
+                    rugged
                 </Button>
                 {typeFilter && <Button variant= {`clear-filters-btn`}
                     onClick={()=>handleFilterChange("type",null)}>
-                    Clear 
-                filters</Button>}
+                    clear filters
+                </Button>}
             </div>
            <div className="vans-options">
                 {vansOptions}  
